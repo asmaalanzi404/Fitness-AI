@@ -35,7 +35,7 @@ export const Login1 = () => {
             timer: 1500,
             iconColor: 'green'
           });
-       
+          // Redirect to another page or take further actions upon successful login.
           navigate("/Homepage1");
         } else {
           Swal.fire({
