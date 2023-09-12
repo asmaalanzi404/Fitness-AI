@@ -1,7 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import ReactPaginate from 'react-paginate';
 import { Box, Button } from '@mui/material';
 
 interface Exercise {
@@ -93,27 +92,8 @@ const App: React.FC = () => {
             </div>
           ))}
       </div>
-      <ReactPaginate
-         previousLabel="Previous"
-            nextLabel="Next"
-            breakLabel="..."
-            pageCount={pageCount}
-             onClick={handlePageChange}
-            marginPagesDisplayed={2}
-            pageRangeDisplayed={5}
-            onPageChange={handlePageChange}
-            containerClassName="flex justify-center py-4"
-            pageClassName="mr-1"
-            activeClassName="font-bold text-blue-500"
-            disabledClassName="opacity-50 cursor-not-allowed"
-            breakClassName="mx-1"
-            previousClassName="mr-1"
-            nextClassName="ml-1"
-            pageLinkClassName="px-3 py-1 rounded-md bg-white border border-gray-300 hover:bg-gray-200"
-            activeLinkClassName="bg-blue-500 text-white"
-            previousLinkClassName="px-3 py-1 rounded-md bg-white border border-gray-300 hover:bg-gray-200"
-            nextLinkClassName="px-3 py-1 rounded-md bg-white border border-gray-300 hover:bg-gray-200"
-          />
+     
+           
     </div>
   );
 };
